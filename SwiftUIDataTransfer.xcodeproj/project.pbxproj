@@ -44,7 +44,6 @@
 		47D6AD722380314D00980995 = {
 			isa = PBXGroup;
 			children = (
-				47D6AD92238034D600980995 /* ChanelView.swift */,
 				47D6AD7D2380314D00980995 /* SwiftUIDataTransfer */,
 				47D6AD7C2380314D00980995 /* Products */,
 			);
@@ -63,8 +62,7 @@
 			children = (
 				47D6AD7E2380314D00980995 /* AppDelegate.swift */,
 				47D6AD802380314D00980995 /* SceneDelegate.swift */,
-				47D6AD822380314D00980995 /* ContentView.swift */,
-				47D6AD9423803B4A00980995 /* VideoView.swift */,
+				47D6AD962380475E00980995 /* Views */,
 				47D6AD842380314F00980995 /* Assets.xcassets */,
 				47D6AD892380314F00980995 /* LaunchScreen.storyboard */,
 				47D6AD8C2380314F00980995 /* Info.plist */,
@@ -79,6 +77,16 @@
 				47D6AD872380314F00980995 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		47D6AD962380475E00980995 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				47D6AD92238034D600980995 /* ChanelView.swift */,
+				47D6AD822380314D00980995 /* ContentView.swift */,
+				47D6AD9423803B4A00980995 /* VideoView.swift */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
