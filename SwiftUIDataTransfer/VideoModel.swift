@@ -6,16 +6,9 @@
 //  Copyright © 2019 Pavel Bondar. All rights reserved.
 //
 
-import SwiftUI
+import Combine
 
-struct VideoModel: View {
-    var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
-    }
-}
-
-struct VideoModel_Previews: PreviewProvider {
-    static var previews: some View {
-        VideoModel()
-    }
+final class VideoModel: ObservableObject {
+    @Published var title: String = "Apples"
+    @Published var description: String = "Eating big apples"
 }

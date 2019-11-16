@@ -12,8 +12,8 @@ struct VideoView: View {
     
     @Environment(\.presentationMode) var presentationMode: Binding<PresentationMode>
     
-    @State var videoTitle: String
-    @State var videoDescription: String
+    @Binding var videoTitle: String
+    @Binding var videoDescription: String
     
     var body: some View {
         NavigationView {

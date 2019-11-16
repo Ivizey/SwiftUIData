@@ -12,6 +12,10 @@ struct ContentView: View {
     
     @State private var showingVideoView = false
     
+    @ObservedObject var videoData = VideoModel()
+    
+    @EnvironmentObject var channelData: ChanelData
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -25,7 +29,7 @@ struct ContentView: View {
                         }, label: {
                             Text("Edit content")
                         }).sheet(isPresented: self.$showingVideoView, content: {
-                            VideoView(videoTitle: "", videoDescription: "")
+                            VideoView(videoTitle: self.$videoData.title, videoDescription: self.$videoData.description)
                         }).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))).background(Color.init(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1))).cornerRadius(10)
                     }
                     }.padding().frame(height: 50)
@@ -33,13 +37,13 @@ struct ContentView: View {
                 HStack {
                     Image("apple").resizable().frame(width: 120, height: 120)
                     VStack(alignment: .leading) {
-                        Text("Hello, World!").font(.title)
-                        Text("Hello, swift!").font(.subheadline).foregroundColor(.gray)
+                        Text("Title: \(videoData.title)").font(.title)
+                        Text("Description: \(videoData.description)").font(.subheadline).foregroundColor(.gray)
                     }
                 }
                 Spacer()
                 }.padding()
-            .navigationBarTitle("SwiftUI")
+                .navigationBarTitle("\(channelData.chanelName)")
         }
     }
 }
