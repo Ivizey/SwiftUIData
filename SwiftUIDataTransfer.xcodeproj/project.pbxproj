@@ -13,6 +13,7 @@
 		47D6AD852380314F00980995 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D6AD842380314F00980995 /* Assets.xcassets */; };
 		47D6AD882380314F00980995 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 47D6AD872380314F00980995 /* Preview Assets.xcassets */; };
 		47D6AD8B2380314F00980995 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 47D6AD892380314F00980995 /* LaunchScreen.storyboard */; };
+		47D6AD93238034D600980995 /* ChanelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 47D6AD92238034D600980995 /* ChanelView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		47D6AD872380314F00980995 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		47D6AD8A2380314F00980995 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		47D6AD8C2380314F00980995 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		47D6AD92238034D600980995 /* ChanelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChanelView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +42,7 @@
 		47D6AD722380314D00980995 = {
 			isa = PBXGroup;
 			children = (
+				47D6AD92238034D600980995 /* ChanelView.swift */,
 				47D6AD7D2380314D00980995 /* SwiftUIDataTransfer */,
 				47D6AD7C2380314D00980995 /* Products */,
 			);
@@ -147,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				47D6AD7F2380314D00980995 /* AppDelegate.swift in Sources */,
+				47D6AD93238034D600980995 /* ChanelView.swift in Sources */,
 				47D6AD812380314D00980995 /* SceneDelegate.swift in Sources */,
 				47D6AD832380314D00980995 /* ContentView.swift in Sources */,
 			);
