@@ -15,6 +15,8 @@ struct VideoView: View {
     @Binding var videoTitle: String
     @Binding var videoDescription: String
     
+    @EnvironmentObject var channelData: ChanelData
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -29,7 +31,7 @@ struct VideoView: View {
                 })
                 Spacer()
             }.padding()
-            .navigationBarTitle("SwiftUI")
+            .navigationBarTitle("\(channelData.chanelName)")
         }
     }
 }
