@@ -9,6 +9,9 @@
 import SwiftUI
 
 struct ContentView: View {
+    
+    @State private var showingVideoView = false
+    
     var body: some View {
         NavigationView {
             VStack(alignment: .leading) {
@@ -18,9 +21,11 @@ struct ContentView: View {
                             Text("Edit chanel")
                             }).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))).background(Color.init(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1))).cornerRadius(10)
                         Button(action: {
-                            print("12345")
+                            self.showingVideoView.toggle()
                         }, label: {
                             Text("Edit content")
+                        }).sheet(isPresented: self.$showingVideoView, content: {
+                            VideoView()
                         }).frame(width: geometry.size.width/2 - 10, height: 50).accentColor(Color.init(#colorLiteral(red: 1, green: 1, blue: 1, alpha: 1))).background(Color.init(#colorLiteral(red: 0.9411764741, green: 0.4980392158, blue: 0.3529411852, alpha: 1))).cornerRadius(10)
                     }
                     }.padding().frame(height: 50)
